@@ -1,2 +1,2 @@
 # LearnPromises
-Leisurely pace Promise learning
+Leisurely pace learning of JS Promises (in TypeScript, of course!)
