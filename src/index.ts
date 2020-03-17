@@ -62,13 +62,13 @@ type Executor = (resolve: ResolveHandler, reject: RejectHandler) => void;
     higherOrderF2(f2);
 
     // 3. Classes
-    let obj = new SomeClass(
-        () => { console.log("\nI am handler"); }, // 1st argument
-        "Goofy"                                   // 2nd argument
-    );
-    obj.handle();
+    // let obj = new SomeClass(
+    //     () => { console.log("\nI am handler"); }, // 1st argument
+    //     "Goofy"                                   // 2nd argument
+    // );
+    // obj.handle();
 
-    obj = new SomeClass(() => { console.log("\nI am another handler"); }); // only 1 argument
+    const obj = new SomeClass(() => { console.log("\nI am another handler"); }); // only 1 argument
     obj.handle();
 
     obj.name = "Spooky";
