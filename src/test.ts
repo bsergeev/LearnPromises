@@ -5,7 +5,7 @@
 // For pure JavaScript (not TypeScript), one could test their guesses by using either browser console
 // (open an empty tab in a browser, hit F12, switch to Console) or Node.js in REPL mode (launch node
 // without file name, i. e. simply "node"). You can then define any variable and find its type with
-// "typeof(x)", e.g.
+// "typeof(x)", e.g. (don't type >, that is just REPL prompt):
 // > let x = 13;
 // undefined
 // > x
@@ -22,6 +22,8 @@ const    fc = (function(i: number = 1): number { return 2*i; })();
 const    fd = ((i: number): number => { return 2*i; })(10);
 let      fe =  (i: number): number => { return i*i; };
 let      ff = ((i: number): number => { return 10*i; })(5);
+// Note that in all cases, ": number" between the list of parameters and "=>" is optional,
+// as TypeScript can automatically deduce the return type of an arrow function.
 
 
 // 2. Which of the above statements are function invocations and what types are corresponding variables?
